@@ -60,6 +60,9 @@
       a: {
         color: "#8d171e !important",
       },
+      "h1, h2, h3, h4, h5, h6, p, li, em, strong": {
+        color: "#1c1814 !important",
+      },
     });
 
     state.rendition.themes.register("sepia", {
@@ -75,6 +78,9 @@
       },
       a: {
         color: "#7f201f !important",
+      },
+      "h1, h2, h3, h4, h5, h6, p, li, em, strong": {
+        color: "#2a2117 !important",
       },
     });
 
