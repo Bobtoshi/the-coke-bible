@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Coke Bible: The First Canon of Capital</title>
+    <meta
+      name="description"
+      content="Read The Coke Bible: The First Canon of Capital by Coke Capital in a fast, free browser reader."
+    />
+    <meta property="og:title" content="The Coke Bible: The First Canon of Capital" />
+    <meta
+      property="og:description"
+      content="A dark scripture of appetite, price, privacy, and power by Coke Capital."
+    />
+    <meta property="og:type" content="book" />
+    <meta property="og:image" content="assets/cover.jpg" />
+    <meta name="theme-color" content="#151311" />
+    <link rel="preload" href="assets/cover.jpg" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="book-panel" aria-label="Book details and contents">
+        <a class="skip-link" href="#viewer">Skip to reader</a>
+        <div class="identity">
+          <img
+            class="cover"
+            src="assets/cover.jpg"
+            alt="Cover of The Coke Bible: The First Canon of Capital"
+          />
+          <div class="book-copy">
+            <p class="author">Coke Capital</p>
+            <h1>The Coke Bible</h1>
+            <p class="subtitle">The First Canon of Capital</p>
+            <p class="summary">
+              A dark scripture of appetite, price, privacy, and power. It binds the White Idol
+              and the Green Candle into one modern myth, not to praise them, but to reveal what
+              men worship when speed, spectacle, and ascent eclipse the soul.
+            </p>
+          </div>
+        </div>
+
+        <div class="primary-actions">
+          <button class="primary-button" id="startButton" type="button">Start reading</button>
+          <a class="secondary-button" href="assets/the-coke-bible.epub" download>Download EPUB</a>
+        </div>
+
+        <nav class="toc-shell" aria-label="Table of contents">
+          <div class="section-heading">Contents</div>
+          <ol id="toc" class="toc-list" aria-live="polite"></ol>
+        </nav>
+
+        <p class="rights">Copyright 2026 Coke Capital. All rights reserved.</p>
+      </aside>
+
+      <main class="reader-shell" aria-label="EPUB reader">
+        <header class="reader-toolbar">
+          <div class="chapter-state">
+            <span class="eyebrow">Now reading</span>
+            <strong id="chapterTitle">Loading book...</strong>
+          </div>
+          <div class="reader-controls" aria-label="Reader controls">
+            <button class="icon-button" id="prevButton" type="button" aria-label="Previous page">
+              <span aria-hidden="true">Prev</span>
+            </button>
+            <label class="select-label" for="themeSelect">
+              <span>Theme</span>
+              <select id="themeSelect">
+                <option value="light">Light</option>
+                <option value="sepia">Sepia</option>
+                <option value="dark">Dark</option>
+              </select>
+            </label>
+            <label class="range-label" for="fontSize">
+              <span>Type</span>
+              <input id="fontSize" type="range" min="85" max="135" step="5" value="100" />
+            </label>
+            <button class="icon-button" id="nextButton" type="button" aria-label="Next page">
+              <span aria-hidden="true">Next</span>
+            </button>
+          </div>
+        </header>
+
+        <section class="reader-frame" aria-live="polite">
+          <div id="loadingState" class="loading-state">
+            <strong>Opening The Coke Bible</strong>
+          </div>
+          <div id="viewer"></div>
+        </section>
+
+        <footer class="reader-footer">
+          <div class="progress-track" aria-hidden="true">
+            <span id="progressBar"></span>
+          </div>
+          <span id="progressText">Preparing reader</span>
+        </footer>
+      </main>
+    </div>
+
+    <script src="vendor/jszip.min.js"></script>
+    <script src="vendor/epub.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
