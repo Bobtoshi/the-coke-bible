@@ -44,6 +44,10 @@
 
   function registerReaderThemes() {
     state.rendition.themes.register("light", {
+      html: {
+        background: "#fffdf7 !important",
+        color: "#1c1814 !important",
+      },
       body: {
         background: "#fffdf7 !important",
         color: "#1c1814 !important",
@@ -59,6 +63,10 @@
     });
 
     state.rendition.themes.register("sepia", {
+      html: {
+        background: "#fff7e6 !important",
+        color: "#2a2117 !important",
+      },
       body: {
         background: "#fff7e6 !important",
         color: "#2a2117 !important",
@@ -71,6 +79,10 @@
     });
 
     state.rendition.themes.register("dark", {
+      html: {
+        background: "#11100f !important",
+        color: "#f1eee8 !important",
+      },
       body: {
         background: "#11100f !important",
         color: "#f1eee8 !important",
@@ -79,6 +91,9 @@
       },
       a: {
         color: "#ff8387 !important",
+      },
+      "h1, h2, h3, h4, h5, h6, p, li, em, strong": {
+        color: "#f1eee8 !important",
       },
     });
   }
